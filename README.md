@@ -1,1 +1,3 @@
-# bridgetown-theme-nsdev
+
+
+# NewSpectrum.dev Theme
