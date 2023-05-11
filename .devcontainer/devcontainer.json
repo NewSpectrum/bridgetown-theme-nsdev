@@ -11,12 +11,35 @@
     "memory": "16gb",
     "storage": "32gb"
   },
+  "forwardPorts": [4000, 4157],
   "customizations": {
     "vscode": {
       "extensions": [
         "streetsidesoftware.code-spell-checker",
-        "ext",
-        ""
+        "bierner.github-markdown-preview",
+        "GitHub.copilot",
+        "GitHub.github-vscode-theme",
+        "GitHub.copilot-labs",
+        "GitHub.remotehub",
+        "christian-kohler.path-intellisense",
+        "rebornix.Ruby",
+        "wingrunr21.vscode-ruby",
+        "PKief.material-icon-theme",
+        "PKief.material-product-icons",
+        "mgmcdermott.vscode-language-babel",
+        "ms-edgedevtools.vscode-edge-devtools",
+        "formulahendry.auto-complete-tag"
+        // "txt",
+        // "txt",
+        // "txt",
+        // "txt",
+        // "txt",
+        // "txt",
+        // "txt",
+        // "txt",
+        // "txt",
+        // "txt"
+		// 
       ]
     }
   }
