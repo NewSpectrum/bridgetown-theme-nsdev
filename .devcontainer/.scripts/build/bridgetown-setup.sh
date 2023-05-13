@@ -65,4 +65,5 @@ fi
 
 
 #- Install the beta version of Bridgetown
+echo -e "\n\e[93mInstalling the beta version of Bridgetown...\e[0m"
 gem install bridgetown -N -v 1.3.0.beta1
