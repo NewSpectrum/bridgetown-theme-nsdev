@@ -1,9 +1,8 @@
 const build = require("./config/esbuild.defaults.js")
-/* NOTE:
-The comments/notes/instructions that were originally part of this file can now be found in the "esbuild-notes.md" file, located in:
-	"/documentation/bridgetown/core-files"
-*/
+// The comments/notes/instructions that were originally part of this file can now be found in the "esbuild-notes.md" file, located in:
+// "/documentation/bridgetown/core-files"
 
+// Update this if you need to configure a destination folder other than `output`
 const outputFolder = "output"
 
 // You can customize this as you wish, perhaps to add new esbuild plugins.
