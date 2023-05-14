@@ -7,7 +7,12 @@ Comments containing instructions/examples/etc from files that are generated with
 - The `esbuild-notes.md` file contains the combined notes of:
 	- `esbuild.config.js`
 	- `config/esbuild.defaults.js`
-- 
+- The `gemfile-notes.md` file contains...
+	- The comments from the original `Gemfile`
+	- Additional notes/guides for managing the theme's Gems, such as:
+		- The integration of [AppMap](https://appmap.io/)
+		- Adding Bridgetown Plugins
+		- Proper use of [gem groups](url)
 		
 
 
