@@ -1,4 +1,6 @@
 name: bridgetown-theme-nsdev
-packages: []
+packages:
+  - path: .
+  - gem: bridgetown
 language: ruby
 appmap_dir: tmp/appmap

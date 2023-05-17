@@ -4,10 +4,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.2'
 
-group :development, :test do
-
 gem 'appmap', :groups => [:development, :test]
-end
+
+# group :development, :test do
+	
+# end
 
 gem "bridgetown", "~> 1.3.0.beta1"
 gem "puma", "< 7"
