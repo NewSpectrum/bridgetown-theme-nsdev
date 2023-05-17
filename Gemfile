@@ -2,6 +2,8 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # The original notes from this file have been moved to the 'gemfile-notes.md' documentation file.
 
+ruby '3.0.2'
+
 group :development, :test do
 	gem 'appmap'
 end
