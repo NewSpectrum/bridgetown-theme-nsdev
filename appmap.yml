@@ -1,6 +1,8 @@
 name: bridgetown-theme-nsdev
 packages:
-  - path: .
+  - path: ./output
   - gem: bridgetown
+  - gem: puma
+  - gem: bridgetown-quick-search
 language: ruby
 appmap_dir: tmp/appmap

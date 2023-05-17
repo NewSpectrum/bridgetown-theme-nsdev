@@ -4,19 +4,15 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.2'
 
-gem 'appmap', :groups => [:development, :test]
-
-# group :development, :test do
-	
-# end
+gem 'appmap', group: %i[test development]
 
 gem "bridgetown", "~> 1.3.0.beta1"
 gem "puma", "< 7"
 gem "nokogiri", "~> 1.13"
+gem "bridgetown-quick-search"
 
 
-group :test, optional: true do
-  gem "nokogiri", "~> 1.13"
+group :development, :test do
   gem "minitest"
   gem "minitest-profile"
   gem "minitest-reporters"
