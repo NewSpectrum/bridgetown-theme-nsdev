@@ -11,8 +11,9 @@
 
 ## The Gemfile
 
-Your project's [Gemfile](https://bundler.io/v1.12/man/gemfile.5.html) is a crucial configuration file written in the [Ruby](https://ruby-lang.org) language. The `Gemfile` is used by [Bundler](https://bundler.io), the dependency manager for [RubyGems](https://rubygems.org/), to ensure all [gem dependencies](#gem-dependencies) are satisfied.
+Your project's [Gemfile](https://bundler.io/v1.12/man/gemfile.5.html) is a crucial configuration file written in the [Ruby](https://ruby-lang.org) language. The [`Gemfile`](/Gemfile) is used by [Bundler](https://bundler.io), the dependency manager for [RubyGems](https://rubygems.org/), to ensure all [gem dependencies](#gem-dependencies) are satisfied.
 
+To create a hyperlink to a file and have it open in VSCode, use the following syntax: `[filename](path/to/file)`.
 
 ### The `Gemfile.lock`
 > __Warning__<br />
@@ -21,6 +22,50 @@ Your project's [Gemfile](https://bundler.io/v1.12/man/gemfile.5.html) is a cruci
 [Bundler](https://bundler.io) also automatically generates (and/or updates) the project's [`Gemfile.lock`](https://bundler.io/guides/rationale.html) after installing Gems from the `Gemfile`, or when modifying the Gem Dependencies with commands like `bundle add`.
 
 The `Gemfile.lock` is a __manifest file__ that lists each of the project's Gems, their versions, and their depenencies. If you are familiar with [NodeJS](https://nodejs.org), the `Gemfile.lock` is similar to (but not quite the same as) the [`package-lock.json`](https://docs.npmjs.com/cli/v9/configuring-npm/package-lock-json) file used by the [Node Package Manager (NPM)](https://npmjs.com) and [Yarn](https://yarnpkg.com/).
+
+
+<details>
+<summary>
+<h2 style="display: inline">Original Gemfile</h2>
+</summary>
+
+```ruby
+source "https://rubygems.org"
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
+####
+# Welcome to your project's Gemfile, used by Rubygems & Bundler.
+#
+# To install a plugin, run:
+#
+#   bundle add new-plugin-name -g bridgetown_plugins
+#
+# This will ensure the plugin is added to the correct Bundler group.
+#
+# When you run Bridgetown commands, we recommend using a binstub like so:
+#
+#   bin/bridgetown start (or console, etc.)
+#
+# This will help ensure the proper Bridgetown version is running.
+####
+
+# If you need to upgrade/switch Bridgetown versions, change the line below
+# and then run `bundle update bridgetown`
+gem "bridgetown", "~> 1.3.0.beta1"
+
+# Uncomment to add file-based dynamic routing to your project:
+# gem "bridgetown-routes", "~> 1.3.0.beta1"
+
+# Puma is the Rack-compatible web server used by Bridgetown
+# (you can optionally limit this to the "development" group)
+gem "puma", "< 7"
+
+# Uncomment to use the Inspectors API to manipulate the output
+# of your HTML or XML resources:
+gem "nokogiri", "~> 1.13"
+```
+</details>
+
 
 
 ## Gem Sources
@@ -65,4 +110,4 @@ bundle add new-plugin-name -g bridgetown_plugins
 When you run Bridgetown commands, we recommend using a binstub like so:
 bin/bridgetown start (or console, etc.)
 is will help ensure the proper Bridgetown version is running.
--->
+/-->
